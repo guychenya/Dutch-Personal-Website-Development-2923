@@ -9,37 +9,37 @@ const About = () => {
   const highlights = [
     {
       icon: FiCode,
-      title: 'Frontend Expertise',
-      description: 'Specialized in React, TypeScript, and modern frontend frameworks with focus on responsive design'
+      title: 'AI & Technology Leadership',
+      description: 'Leading digital transformation initiatives and AI research projects with expertise in open-source solutions and enterprise SaaS implementations'
     },
     {
       icon: FiUsers,
-      title: 'User-Centered Design',
-      description: 'Creating intuitive interfaces that prioritize user experience and accessibility'
+      title: 'Global Team Management',
+      description: 'Managing diverse, cross-functional teams across regulated industries with proven track record in large-scale project delivery'
     },
     {
       icon: FiTrendingUp,
-      title: 'Performance Focus',
-      description: 'Optimizing applications for speed, scalability, and exceptional user performance'
+      title: 'Digital Transformation',
+      description: 'Driving customer success and business growth through innovative AI-driven solutions and strategic technology implementations'
     },
     {
       icon: FiAward,
-      title: 'Quality Standards',
-      description: 'Committed to writing clean, maintainable code following industry best practices'
+      title: 'Innovation Excellence',
+      description: 'Continuously pushing boundaries with cutting-edge AI tools, local models, and emerging technologies to maximize business value'
     }
   ];
 
   const personalValues = [
-    'Innovation & Creativity',
-    'Continuous Learning',
-    'User Experience',
-    'Clean Code',
-    'Team Collaboration',
-    'Problem Solving'
+    'Innovation & Research',
+    'AI-Driven Solutions',
+    'Global Leadership',
+    'Digital Transformation',
+    'Team Excellence',
+    'Strategic Vision'
   ];
 
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white dark:bg-gray-900 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ const About = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
             About Me
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full"></div>
@@ -62,21 +62,24 @@ const About = () => {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <div className="prose prose-lg text-gray-600">
+            <div className="prose prose-lg text-gray-600 dark:text-gray-300">
               <p className="text-xl leading-relaxed mb-6">
-                I'm a passionate Frontend Developer and UI/UX Designer based in Amsterdam with a deep love for 
-                creating beautiful, functional web applications. With expertise in React, TypeScript, and modern 
-                design principles, I transform ideas into engaging digital experiences.
+                I'm a highly accomplished Technology Executive and AI Research Leader based in Tel-Aviv, 
+                with over 20 years of global experience driving digital transformation and innovation. 
+                My expertise spans customer success, enterprise SaaS implementations, and cutting-edge 
+                AI research in regulated industries.
               </p>
               <p className="text-lg leading-relaxed mb-6">
-                My approach combines technical excellence with creative design thinking. I believe that great 
-                software not only works flawlessly but also delights users through thoughtful interface design 
-                and intuitive interactions.
+                My approach combines strategic leadership with hands-on technical expertise. I specialize 
+                in exploring and leveraging open-source code, local models, and the latest AI tools to 
+                create maximum value across every business process. I believe in the transformative power 
+                of AI-driven solutions to solve complex challenges.
               </p>
               <p className="text-lg leading-relaxed">
-                When I'm not coding, you'll find me exploring Amsterdam's design scene, experimenting with new 
-                frontend technologies, or contributing to open-source projects that make the web more accessible 
-                and beautiful for everyone.
+                When I'm not leading technology initiatives, you'll find me researching emerging AI 
+                technologies, contributing to open-source projects, or mentoring the next generation 
+                of technology leaders. I'm passionate about pushing the boundaries of what's possible 
+                with artificial intelligence and machine learning.
               </p>
             </div>
 
@@ -85,10 +88,10 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-r from-primary-50 to-accent-50 p-6 rounded-2xl border border-primary-100"
+              className="bg-gradient-to-r from-primary-50 to-accent-50 dark:from-gray-800 dark:to-gray-700 p-6 rounded-2xl border border-primary-100 dark:border-gray-600"
             >
-              <h3 className="text-lg font-semibold text-gray-900 mb-4 flex items-center">
-                <SafeIcon icon={FiHeart} className="text-primary-500 mr-2" />
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100 mb-4 flex items-center">
+                <SafeIcon icon={FiHeart} className="text-primary-500 dark:text-primary-400 mr-2" />
                 Core Values
               </h3>
               <div className="grid grid-cols-2 gap-3">
@@ -101,8 +104,8 @@ const About = () => {
                     viewport={{ once: true }}
                     className="flex items-center space-x-2"
                   >
-                    <SafeIcon icon={FiTarget} className="text-accent-500 text-sm" />
-                    <span className="text-sm font-medium text-gray-700">{value}</span>
+                    <SafeIcon icon={FiTarget} className="text-accent-500 dark:text-accent-400 text-sm" />
+                    <span className="text-sm font-medium text-gray-700 dark:text-gray-300">{value}</span>
                   </motion.div>
                 ))}
               </div>
@@ -124,7 +127,7 @@ const About = () => {
                 transition={{ delay: index * 0.1, duration: 0.6 }}
                 viewport={{ once: true }}
                 whileHover={{ scale: 1.02, y: -2 }}
-                className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+                className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
               >
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
@@ -133,10 +136,10 @@ const About = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">
                       {item.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                       {item.description}
                     </p>
                   </div>

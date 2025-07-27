@@ -24,11 +24,11 @@ const Hero = () => {
             className="mb-8"
           >
             <div className="relative inline-block">
-              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary-400 to-accent-500 p-1 shadow-2xl">
-                <div className="w-full h-full rounded-full bg-gray-200 flex items-center justify-center text-4xl md:text-5xl font-bold text-gray-600 overflow-hidden">
+              <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-gradient-to-br from-primary-400 to-accent-500 p-1 shadow-2xl dark:from-primary-500 dark:to-accent-600">
+                <div className="w-full h-full rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center text-4xl md:text-5xl font-bold text-gray-600 dark:text-gray-300 overflow-hidden">
                   <img
                     src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=400&h=400&fit=crop&crop=face"
-                    alt="Greta Kamps"
+                    alt="Guy Chenya"
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
@@ -49,23 +49,25 @@ const Hero = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="space-y-4 mb-8"
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-gray-100">
               Hi, I'm{' '}
-              <span className="bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">
-                Greta Kamps
+              <span className="bg-gradient-to-r from-primary-600 to-accent-600 dark:from-primary-400 dark:to-accent-400 bg-clip-text text-transparent">
+                Guy Chenya
               </span>
             </h1>
-            <div className="text-xl md:text-2xl text-gray-600 space-y-2">
-              <p className="font-medium">Frontend Developer & UI/UX Designer</p>
+            <div className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 space-y-2">
+              <p className="font-medium">Technology Executive & AI Research Leader</p>
               <div className="flex items-center justify-center space-x-2 text-lg">
-                <SafeIcon icon={FiMapPin} className="text-primary-500" />
-                <span>Amsterdam, Netherlands</span>
+                <SafeIcon icon={FiMapPin} className="text-primary-500 dark:text-primary-400" />
+                <span>Tel-Aviv, Israel</span>
               </div>
             </div>
-            <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Passionate frontend developer with expertise in React, TypeScript, and modern web technologies. 
-              I create beautiful, responsive, and user-friendly applications that deliver exceptional digital experiences 
-              and drive business success.
+            <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed">
+              Highly accomplished technology executive and AI researcher with 20+ years of global experience 
+              driving digital transformation, customer success, and enterprise SaaS implementations in regulated 
+              industries. I specialize in exploring and leveraging open-source code, local models, and the latest 
+              AI tools to maximize value across every process. Passionate about innovation, I lead diverse teams, 
+              manage large-scale projects, and continuously push the boundaries of what's possible with AI-driven solutions.
             </p>
           </motion.div>
 
@@ -79,7 +81,7 @@ const Hero = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToContact}
-              className="flex items-center space-x-2 bg-gradient-to-r from-primary-600 to-primary-700 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="flex items-center space-x-2 bg-gradient-to-r from-primary-600 to-primary-700 dark:from-primary-500 dark:to-primary-600 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <SafeIcon icon={FiMail} />
               <span>Get In Touch</span>
@@ -89,7 +91,7 @@ const Hero = () => {
               whileTap={{ scale: 0.95 }}
               href="/resume.pdf"
               target="_blank"
-              className="flex items-center space-x-2 bg-white text-gray-700 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl border border-gray-200 hover:border-primary-300 transition-all duration-300"
+              className="flex items-center space-x-2 bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-600 transition-all duration-300"
             >
               <SafeIcon icon={FiDownload} />
               <span>Download Resume</span>
@@ -103,8 +105,8 @@ const Hero = () => {
             className="flex justify-center space-x-6"
           >
             {[
-              { icon: FiGithub, href: 'https://github.com/gretakamps', label: 'GitHub' },
-              { icon: FiLinkedin, href: 'https://linkedin.com/in/gretakamps', label: 'LinkedIn' },
+              { icon: FiGithub, href: 'https://github.com/guychenya', label: 'GitHub' },
+              { icon: FiLinkedin, href: 'https://linkedin.com/in/guychenya', label: 'LinkedIn' },
             ].map((social) => (
               <motion.a
                 key={social.label}
@@ -113,7 +115,7 @@ const Hero = () => {
                 href={social.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-white rounded-full shadow-lg hover:shadow-xl text-gray-700 hover:text-primary-600 transition-all duration-300 border border-gray-200 hover:border-primary-300"
+                className="p-3 bg-white dark:bg-gray-800 rounded-full shadow-lg hover:shadow-xl text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-all duration-300 border border-gray-200 dark:border-gray-700 hover:border-primary-300 dark:hover:border-primary-600"
                 aria-label={social.label}
               >
                 <SafeIcon icon={social.icon} className="text-xl" />

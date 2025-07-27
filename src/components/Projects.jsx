@@ -1,9 +1,9 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import {motion} from 'framer-motion';
 import * as FiIcons from 'react-icons/fi';
 import SafeIcon from '../common/SafeIcon';
 
-const { FiExternalLink, FiGithub, FiFolder, FiStar, FiUsers, FiTrendingUp } = FiIcons;
+const {FiExternalLink, FiGithub, FiFolder, FiStar, FiUsers, FiTrendingUp} = FiIcons;
 
 const Projects = () => {
   const projects = [
@@ -18,12 +18,8 @@ const Projects = () => {
         'Admin dashboard with analytics',
         'Mobile-responsive design'
       ],
-      stats: {
-        users: '10k+',
-        performance: '99.9%',
-        rating: '4.8/5'
-      },
-      github: 'https://github.com/gretakamps/ecommerce-platform',
+      stats: {users: '10k+', performance: '99.9%', rating: '4.8/5'},
+      github: 'https://github.com/guychenya/ecommerce-platform',
       live: 'https://ecommerce-demo.vercel.app',
       status: 'Production'
     },
@@ -38,12 +34,8 @@ const Projects = () => {
         'Team workspaces',
         'Progress tracking & analytics'
       ],
-      stats: {
-        users: '5k+',
-        performance: '98.5%',
-        rating: '4.7/5'
-      },
-      github: 'https://github.com/gretakamps/task-manager',
+      stats: {users: '5k+', performance: '98.5%', rating: '4.7/5'},
+      github: 'https://github.com/guychenya/task-manager',
       live: 'https://taskmanager-demo.vercel.app',
       status: 'Production'
     },
@@ -58,12 +50,8 @@ const Projects = () => {
         'Historical data analysis',
         'Weather alerts & notifications'
       ],
-      stats: {
-        users: '3k+',
-        performance: '97.8%',
-        rating: '4.6/5'
-      },
-      github: 'https://github.com/gretakamps/weather-dashboard',
+      stats: {users: '3k+', performance: '97.8%', rating: '4.6/5'},
+      github: 'https://github.com/guychenya/weather-dashboard',
       live: 'https://weather-analytics.vercel.app',
       status: 'Production'
     },
@@ -78,12 +66,8 @@ const Projects = () => {
         'Automated scheduling',
         'Competitor analysis'
       ],
-      stats: {
-        users: '7k+',
-        performance: '99.2%',
-        rating: '4.9/5'
-      },
-      github: 'https://github.com/gretakamps/social-analytics',
+      stats: {users: '7k+', performance: '99.2%', rating: '4.9/5'},
+      github: 'https://github.com/guychenya/social-analytics',
       live: 'https://social-analytics-demo.vercel.app',
       status: 'Production'
     },
@@ -98,12 +82,8 @@ const Projects = () => {
         'Mortgage calculator',
         'Agent dashboard'
       ],
-      stats: {
-        users: '12k+',
-        performance: '98.9%',
-        rating: '4.8/5'
-      },
-      github: 'https://github.com/gretakamps/real-estate-platform',
+      stats: {users: '12k+', performance: '98.9%', rating: '4.8/5'},
+      github: 'https://github.com/guychenya/real-estate-platform',
       live: 'https://realestate-demo.vercel.app',
       status: 'Production'
     },
@@ -118,12 +98,8 @@ const Projects = () => {
         'Progress tracking',
         'Certificate generation'
       ],
-      stats: {
-        users: '8k+',
-        performance: '99.1%',
-        rating: '4.7/5'
-      },
-      github: 'https://github.com/gretakamps/lms-platform',
+      stats: {users: '8k+', performance: '99.1%', rating: '4.7/5'},
+      github: 'https://github.com/guychenya/lms-platform',
       live: 'https://lms-demo.vercel.app',
       status: 'Beta'
     }
@@ -133,10 +109,10 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          initial={{opacity: 0, y: 30}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{duration: 0.6}}
+          viewport={{once: true}}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -152,11 +128,11 @@ const Projects = () => {
           {projects.map((project, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.6 }}
-              viewport={{ once: true }}
-              whileHover={{ y: -5 }}
+              initial={{opacity: 0, y: 30}}
+              whileInView={{opacity: 1, y: 0}}
+              transition={{delay: index * 0.1, duration: 0.6}}
+              viewport={{once: true}}
+              whileHover={{y: -5}}
               className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden group"
             >
               <div className="relative overflow-hidden">
@@ -166,16 +142,17 @@ const Projects = () => {
                   className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute top-4 right-4">
-                  <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
-                    project.status === 'Production' 
-                      ? 'bg-green-100 text-green-800' 
-                      : 'bg-yellow-100 text-yellow-800'
-                  }`}>
+                  <span
+                    className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                      project.status === 'Production'
+                        ? 'bg-green-100 text-green-800'
+                        : 'bg-yellow-100 text-yellow-800'
+                    }`}
+                  >
                     {project.status}
                   </span>
                 </div>
               </div>
-
               <div className="p-6">
                 <div className="flex items-center justify-between mb-3">
                   <h3 className="text-xl font-bold text-gray-900 group-hover:text-primary-600 transition-colors">
@@ -183,11 +160,7 @@ const Projects = () => {
                   </h3>
                   <SafeIcon icon={FiFolder} className="text-primary-500" />
                 </div>
-
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-
+                <p className="text-gray-600 mb-4 leading-relaxed">{project.description}</p>
                 <div className="mb-4">
                   <h4 className="text-sm font-semibold text-gray-900 mb-2">Key Features:</h4>
                   <ul className="grid grid-cols-2 gap-1 text-sm text-gray-600">
@@ -199,7 +172,6 @@ const Projects = () => {
                     ))}
                   </ul>
                 </div>
-
                 <div className="mb-4">
                   <div className="flex items-center justify-between text-sm mb-2">
                     <div className="flex items-center space-x-1">
@@ -218,7 +190,6 @@ const Projects = () => {
                     </div>
                   </div>
                 </div>
-
                 <div className="mb-6">
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
@@ -231,11 +202,10 @@ const Projects = () => {
                     ))}
                   </div>
                 </div>
-
                 <div className="flex space-x-3">
                   <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                    whileHover={{scale: 1.05}}
+                    whileTap={{scale: 0.95}}
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -245,8 +215,8 @@ const Projects = () => {
                     <span>Live Demo</span>
                   </motion.a>
                   <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                    whileHover={{scale: 1.05}}
+                    whileTap={{scale: 0.95}}
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -262,22 +232,21 @@ const Projects = () => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.4, duration: 0.6 }}
-          viewport={{ once: true }}
+          initial={{opacity: 0, y: 30}}
+          whileInView={{opacity: 1, y: 0}}
+          transition={{delay: 0.4, duration: 0.6}}
+          viewport={{once: true}}
           className="mt-16 text-center"
         >
           <div className="bg-gradient-to-r from-primary-50 to-accent-50 rounded-2xl p-8 border border-primary-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">More Projects Coming Soon</h3>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto mb-6">
-              I'm constantly working on new projects and exploring innovative technologies. 
-              Check out my GitHub for the latest updates and contributions to open-source projects.
+              I'm constantly working on new projects and exploring innovative technologies. Check out my GitHub for the latest updates and contributions to open-source projects.
             </p>
             <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="https://github.com/gretakamps"
+              whileHover={{scale: 1.05}}
+              whileTap={{scale: 0.95}}
+              href="https://github.com/guychenya"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-200"

@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       fontFamily: {
@@ -50,7 +51,7 @@ export default {
           '100%': { transform: 'translateY(0)', opacity: '1' },
         },
         bounceSubtle: {
-          '0%, 100%': { transform: 'translateY(0)' },
+          '0%,100%': { transform: 'translateY(0)' },
           '50%': { transform: 'translateY(-5px)' },
         }
       }
